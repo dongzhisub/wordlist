@@ -454,7 +454,7 @@ ref_section = '''
 </html>
 '''
 
-html_content = html_start + '\\n'.join(word_rows) + '\\n' + word_table_end + expr_section + ref_section
+html_content = html_start + '\n'.join(word_rows) + '\n' + word_table_end + expr_section + ref_section
 
 with open('/home/panxf/antigravity/wordlist/vocabulary-5x.html', 'w', encoding='utf-8') as f:
     f.write(html_content)
