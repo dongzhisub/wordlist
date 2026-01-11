@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>沪教版五年级英语上册 - 单词表</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-size: 2.5em;
+        }
+
+        .module-title {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 15px 25px;
+            border-radius: 10px;
+            margin: 20px 0 15px;
+            font-size: 1.4em;
+            color: #764ba2;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .word-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+        }
+
+        .word-table th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-size: 1.1em;
+        }
+
+        .word-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .word-table tr:hover {
+            background: linear-gradient(90deg, #f8f9ff 0%, #fff 100%);
+        }
+
+        .word {
+            font-weight: bold;
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        .pos {
+            color: #667eea;
+            font-style: italic;
+            font-size: 0.95em;
+        }
+
+        .phonetic {
+            color: #888;
+            font-family: 'Lucida Sans Unicode', sans-serif;
+        }
+
+        .meaning {
+            color: #555;
+        }
+
+        .letter-header {
+            background: linear-gradient(90deg, #f0f4ff 0%, #fff 100%);
+            font-weight: bold;
+            font-size: 1.3em;
+            color: #764ba2;
+        }
+
+        .letter-header td {
+            padding: 10px 15px;
+            border-left: 4px solid #764ba2;
+        }
+
+        .daily-expr {
+            background: #fffbeb;
+        }
+
+        .daily-expr td {
+            border-left: 4px solid #f59e0b;
+        }
+
+        .reference-section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .reference-section h2 {
+            color: #764ba2;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        .reference-intro {
+            color: #666;
+            margin-bottom: 25px;
+            font-size: 1.1em;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .image-item {
+            background: #f8f9ff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .image-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .image-caption {
+            padding: 15px;
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        .image-caption strong {
+            color: #667eea;
+        }
+
+        .copyright-notice {
+            color: #888;
+            font-size: 0.9em;
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .copyright-notice a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .copyright-notice a:hover {
+            text-decoration: underline;
+        }
+
+        /* Daily Expressions Styles */
+        .daily-expressions-section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .daily-expressions-section h2 {
+            color: #764ba2;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #f59e0b;
+            padding-bottom: 10px;
+        }
+
+        .expr-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .expr-item {
+            display: flex;
+            align-items: center;
+            background: #fffbeb;
+            padding: 12px 15px;
+            border-radius: 8px;
+            border-left: 4px solid #f59e0b;
+            transition: transform 0.2s ease;
+        }
+
+        .expr-item:hover {
+            transform: translateX(5px);
+            background: #fef3c7;
+        }
+
+        .expr-text {
+            flex: 1;
+            font-weight: bold;
+            color: #333;
+            font-size: 1em;
+        }
+
+        .expr-cn {
+            flex: 1;
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .expr-unit {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: bold;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .expr-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* 发音按钮样式 */
+        .speak-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 8px;
+            transition: all 0.3s ease;
+            vertical-align: middle;
+            box-shadow: 0 2px 5px rgba(102, 126, 234, 0.3);
+        }
+
+        .speak-btn:hover {
+            transform: scale(1.15);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5);
+        }
+
+        .speak-btn:active {
+            transform: scale(0.95);
+        }
+
+        .speak-btn.playing {
+            animation: pulse 0.8s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+                box-shadow: 0 2px 5px rgba(102, 126, 234, 0.3);
+            }
+
+            50% {
+                transform: scale(1.1);
+                box-shadow: 0 4px 15px rgba(102, 126, 234, 0.6);
+            }
+        }
+
+        .speak-btn svg {
+            width: 14px;
+            height: 14px;
+            fill: white;
+        }
+
+        .word-cell {
+            display: flex;
+            align-items: center;
+        }
+
+        .word-cell .word {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>📚 沪教版五年级英语上册 单词表</h1>
+
+        <table class="word-table">
+            <thead>
+                <tr>
+                    <th style="width:25%">单词 Word</th>
+                    <th style="width:15%">词性 POS</th>
+                    <th style="width:25%">音标 Phonetic</th>
+                    <th style="width:35%">中文意思 Meaning</th>
+                </tr>
+            </thead>
+                        <tbody>
+                <!-- A -->
+                <tr class="letter-header">
+                    <td colspan="4">A</td>
+                </tr>
+                <tr>
+                    <td class="word">along</td>
+                    <td class="pos">prep.</td>
+                    <td class="phonetic">/əˈlɒŋ/</td>
+                    <td class="meaning">沿着</td>
+                </tr>
+                <tr>
+                    <td class="word">a lot of</td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">大量，许多</td>
+                </tr>
+                <tr>
+                    <td class="word">(not) afraid of</td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">（不）害怕，畏惧</td>
+                </tr>
+                <tr>
+                    <td class="word">all year</td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">整年，终年</td>
+                </tr>
+                <tr>
+                    <td class="word">arrive (at)</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/əˈraɪv/</td>
+                    <td class="meaning">到达</td>
+                </tr>
+
+                <!-- B -->
+                <tr class="letter-header">
+                    <td colspan="4">B</td>
+                </tr>
+                <tr>
+                    <td class="word">bakery</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈbeɪkəri/</td>
+                    <td class="meaning">面包店</td>
+                </tr>
+                <tr>
+                    <td class="word">bank</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/bæŋk/</td>
+                    <td class="meaning">银行</td>
+                </tr>
+                <tr>
+                    <td class="word">begin</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/bɪˈɡɪn/</td>
+                    <td class="meaning">开始</td>
+                </tr>
+                <tr>
+                    <td class="word">best (adj.)</td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/best/</td>
+                    <td class="meaning">最好的</td>
+                </tr>
+                <tr>
+                    <td class="word">better</td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/ˈbetər/</td>
+                    <td class="meaning">更好的</td>
+                </tr>
+                <tr>
+                    <td class="word">blow</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/bləʊ/</td>
+                    <td class="meaning">吹</td>
+                </tr>
+                <tr>
+                    <td class="word">boat</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/bəʊt/</td>
+                    <td class="meaning">船</td>
+                </tr>
+                <tr>
+                    <td class="word">both</td>
+                    <td class="pos">pron.</td>
+                    <td class="phonetic">/bəʊθ/</td>
+                    <td class="meaning">（两者）都</td>
+                </tr>
+                <tr>
+                    <td class="word">bring</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/brɪŋ/</td>
+                    <td class="meaning">带来</td>
+                </tr>
+                <tr>
+                    <td class="word">bus</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/bʌs/</td>
+                    <td class="meaning">公共汽车</td>
+                </tr>
+                <tr>
+                    <td class="word">button</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈbʌtn/</td>
+                    <td class="meaning">按钮</td>
+                </tr>
+                <tr>
+                    <td class="word">by (prep.)</td>
+                    <td class="pos">prep.</td>
+                    <td class="phonetic">/baɪ/</td>
+                    <td class="meaning">乘坐（交通工具）</td>
+                </tr>
+
+                <!-- C -->
+                <tr class="letter-header">
+                    <td colspan="4">C</td>
+                </tr>
+                <tr>
+                    <td class="word">can (n.)</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/kæn/</td>
+                    <td class="meaning">罐头</td>
+                </tr>
+                <tr>
+                    <td class="word">careful</td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/ˈkeəfəl/</td>
+                    <td class="meaning">小心的，谨慎的</td>
+                </tr>
+                <tr>
+                    <td class="word">cave</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/keɪv/</td>
+                    <td class="meaning">洞穴</td>
+                </tr>
+                <tr>
+                    <td class="word">change</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/tʃeɪndʒ/</td>
+                    <td class="meaning">零钱</td>
+                </tr>
+                <tr>
+                    <td class="word">cinema</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈsɪnəmə/</td>
+                    <td class="meaning">电影院</td>
+                </tr>
+                <tr>
+                    <td class="word">club</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/klʌb/</td>
+                    <td class="meaning">俱乐部</td>
+                </tr>
+                <tr>
+                    <td class="word">cough</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/kɒf/</td>
+                    <td class="meaning">咳嗽</td>
+                </tr>
+                <tr>
+                    <td class="word">country</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈkʌntri/</td>
+                    <td class="meaning">国家；乡下</td>
+                </tr>
+                <tr>
+                    <td class="word">cross</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/krɒs/</td>
+                    <td class="meaning">穿过</td>
+                </tr>
+                <tr>
+                    <td class="word">crossing</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈkrɒsɪŋ/</td>
+                    <td class="meaning">十字路口</td>
+                </tr>
+
+                <!-- D -->
+                <tr class="letter-header">
+                    <td colspan="4">D</td>
+                </tr>
+                <tr>
+                    <td class="word">dentist</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈdentɪst/</td>
+                    <td class="meaning">牙医</td>
+                </tr>
+                <tr>
+                    <td class="word">die</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/daɪ/</td>
+                    <td class="meaning">死亡</td>
+                </tr>
+                <tr>
+                    <td class="word">different</td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/ˈdɪfrənt/</td>
+                    <td class="meaning">不同的</td>
+                </tr>
+                <tr>
+                    <td class="word">Double Ninth cake</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">重阳糕</td>
+                </tr>
+                <tr>
+                    <td class="word">dream</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/driːm/</td>
+                    <td class="meaning">梦想</td>
+                </tr>
+                <tr>
+                    <td class="word">drink</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/drɪŋk/</td>
+                    <td class="meaning">喝</td>
+                </tr>
+                <tr>
+                    <td class="word">drop</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/drɒp/</td>
+                    <td class="meaning">扔掉，丢弃</td>
+                </tr>
+
+                <!-- E -->
+                <tr class="letter-header">
+                    <td colspan="4">E</td>
+                </tr>
+                <tr>
+                    <td class="word">each other</td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">互相</td>
+                </tr>
+                <tr>
+                    <td class="word">east</td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/iːst/</td>
+                    <td class="meaning">东方的</td>
+                </tr>
+                <tr>
+                    <td class="word">either ... or ...</td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">（两者之间）或者...或者</td>
+                </tr>
+                <tr>
+                    <td class="word">am/are/is going to</td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">将要</td>
+                </tr>
+                <tr>
+                    <td class="word">enough</td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/ɪˈnʌf/</td>
+                    <td class="meaning">足够的</td>
+                </tr>
+
+                <!-- F -->
+                <tr class="letter-header">
+                    <td colspan="4">F</td>
+                </tr>
+                <tr>
+                    <td class="word">face</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/feɪs/</td>
+                    <td class="meaning">面向，面对</td>
+                </tr>
+                <tr>
+                    <td class="word">(not) far from</td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">距离...（不）远</td>
+                </tr>
+                <tr>
+                    <td class="word">farm</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/fɑːm/</td>
+                    <td class="meaning">农场</td>
+                </tr>
+                <tr>
+                    <td class="word">favourite</td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/ˈfeɪvərɪt/</td>
+                    <td class="meaning">最喜爱的</td>
+                </tr>
+                <tr>
+                    <td class="word">fever</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈfiːvər/</td>
+                    <td class="meaning">发烧，发热</td>
+                </tr>
+                <tr>
+                    <td class="word">finally</td>
+                    <td class="pos">adv.</td>
+                    <td class="phonetic">/ˈfaɪnəli/</td>
+                    <td class="meaning">最后</td>
+                </tr>
+                <tr>
+                    <td class="word">first</td>
+                    <td class="pos">adv.</td>
+                    <td class="phonetic">/fɜːst/</td>
+                    <td class="meaning">首先</td>
+                </tr>
+                <tr>
+                    <td class="word">fly</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/flaɪ/</td>
+                    <td class="meaning">飞</td>
+                </tr>
+                <tr>
+                    <td class="word">fourth</td>
+                    <td class="pos">num.</td>
+                    <td class="phonetic">/fɔːθ/</td>
+                    <td class="meaning">第四</td>
+                </tr>
+
+                <!-- G -->
+                <tr class="letter-header">
+                    <td colspan="4">G</td>
+                </tr>
+                <tr>
+                    <td class="word">gently</td>
+                    <td class="pos">adv.</td>
+                    <td class="phonetic">/ˈdʒentli/</td>
+                    <td class="meaning">轻轻地</td>
+                </tr>
+                <tr>
+                    <td class="word">get off</td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">下（车、船等）</td>
+                </tr>
+                <tr>
+                    <td class="word">get on</td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">上（车、船等）</td>
+                </tr>
+                <tr>
+                    <td class="word">go shopping</td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">购物</td>
+                </tr>
+                <tr>
+                    <td class="word">(be) good at</td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">擅长</td>
+                </tr>
+                <tr>
+                    <td class="word">grandchild</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈɡræntʃaɪld/</td>
+                    <td class="meaning">（外）孙子，（外）孙女</td>
+                </tr>
+
+                <!-- H -->
+                <tr class="letter-header">
+                    <td colspan="4">H</td>
+                </tr>
+                <tr>
+                    <td class="word">half-time</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˌhɑːfˈtaɪm/</td>
+                    <td class="meaning">中场休息</td>
+                </tr>
+                <tr>
+                    <td class="word">happily</td>
+                    <td class="pos">adv.</td>
+                    <td class="phonetic">/ˈhæpɪli/</td>
+                    <td class="meaning">快乐地</td>
+                </tr>
+                <tr>
+                    <td class="word">(feel) happy</td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">（感到）开心</td>
+                </tr>
+                <tr>
+                    <td class="word">have a cold</td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">感冒</td>
+                </tr>
+                <tr>
+                    <td class="word">have a rest</td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">休息</td>
+                </tr>
+                <tr>
+                    <td class="word">have nothing</td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">什么也没有</td>
+                </tr>
+                <tr>
+                    <td class="word">heavily</td>
+                    <td class="pos">adv.</td>
+                    <td class="phonetic">/ˈhevɪli/</td>
+                    <td class="meaning">猛烈地，厉害地</td>
+                </tr>
+                <tr>
+                    <td class="word">heavy</td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/ˈhevi/</td>
+                    <td class="meaning">重的</td>
+                </tr>
+                <tr>
+                    <td class="word">helicopter</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈhelɪkɒptər/</td>
+                    <td class="meaning">直升飞机</td>
+                </tr>
+                <tr>
+                    <td class="word">help</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/help/</td>
+                    <td class="meaning">帮助</td>
+                </tr>
+                <tr>
+                    <td class="word">hide</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/haɪd/</td>
+                    <td class="meaning">躲藏</td>
+                </tr>
+                <tr>
+                    <td class="word">hospital</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈhɒspɪtl/</td>
+                    <td class="meaning">医院</td>
+                </tr>
+                <tr>
+                    <td class="word">hotel</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/həʊˈtel/</td>
+                    <td class="meaning">宾馆，酒店</td>
+                </tr>
+                <tr>
+                    <td class="word">hug</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/hʌɡ/</td>
+                    <td class="meaning">拥抱</td>
+                </tr>
+                <tr>
+                    <td class="word">hurt</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/hɜːt/</td>
+                    <td class="meaning">（使）疼痛，受伤</td>
+                </tr>
+
+                <!-- I -->
+                <tr class="letter-header">
+                    <td colspan="4">I</td>
+                </tr>
+                <tr>
+                    <td class="word">into</td>
+                    <td class="pos">prep.</td>
+                    <td class="phonetic">/ˈɪntʊ/</td>
+                    <td class="meaning">进入...里面</td>
+                </tr>
+                <tr>
+                    <td class="word">in the future</td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">在将来</td>
+                </tr>
+
+                <!-- J -->
+                <tr class="letter-header">
+                    <td colspan="4">J</td>
+                </tr>
+                <tr>
+                    <td class="word">journey</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈdʒɜːni/</td>
+                    <td class="meaning">旅行，旅程</td>
+                </tr>
+
+                <!-- K -->
+                <tr class="letter-header">
+                    <td colspan="4">K</td>
+                </tr>
+                <tr>
+                    <td class="word">keep sb/sth</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/kiːp/</td>
+                    <td class="meaning">保持某状态</td>
+                </tr>
+
+                <!-- L -->
+                <tr class="letter-header">
+                    <td colspan="4">L</td>
+                </tr>
+                <tr>
+                    <td class="word">lane</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/leɪn/</td>
+                    <td class="meaning">小巷</td>
+                </tr>
+                <tr>
+                    <td class="word">leave</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/liːv/</td>
+                    <td class="meaning">离开</td>
+                </tr>
+                <tr>
+                    <td class="word">left</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/left/</td>
+                    <td class="meaning">左边</td>
+                </tr>
+                <tr>
+                    <td class="word">lifeboat</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈlaɪfbəʊt/</td>
+                    <td class="meaning">救生艇</td>
+                </tr>
+                <tr>
+                    <td class="word">Little Red Riding Hood</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">小红帽</td>
+                </tr>
+                <tr>
+                    <td class="word">old (n.)</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">（与the连用）老人</td>
+                </tr>
+                <tr>
+                    <td class="word">lucky</td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/ˈlʌki/</td>
+                    <td class="meaning">幸运的</td>
+                </tr>
+
+                <!-- M -->
+                <tr class="letter-header">
+                    <td colspan="4">M</td>
+                </tr>
+                <tr>
+                    <td class="word">(be) made of</td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">由...做成</td>
+                </tr>
+                <tr>
+                    <td class="word">match</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/mætʃ/</td>
+                    <td class="meaning">比赛</td>
+                </tr>
+                <tr>
+                    <td class="word">medicine</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈmedɪsn/</td>
+                    <td class="meaning">药</td>
+                </tr>
+                <tr>
+                    <td class="word">metro</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈmetrəʊ/</td>
+                    <td class="meaning">地铁</td>
+                </tr>
+                <tr>
+                    <td class="word">model</td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/ˈmɒdl/</td>
+                    <td class="meaning">模型的</td>
+                </tr>
+                <tr>
+                    <td class="word">month</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/mʌnθ/</td>
+                    <td class="meaning">月（份）</td>
+                </tr>
+                <tr>
+                    <td class="word">must</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/mʌst/</td>
+                    <td class="meaning">必须</td>
+                </tr>
+                <tr>
+                    <td class="word">museum</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/mjuːˈziːəm/</td>
+                    <td class="meaning">博物馆</td>
+                </tr>
+
+                <!-- N -->
+                <tr class="letter-header">
+                    <td colspan="4">N</td>
+                </tr>
+                <tr>
+                    <td class="word">nod</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/nɒd/</td>
+                    <td class="meaning">点头</td>
+                </tr>
+                <tr>
+                    <td class="word">north</td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/nɔːθ/</td>
+                    <td class="meaning">北方的</td>
+                </tr>
+                <tr>
+                    <td class="word">need</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/niːd/</td>
+                    <td class="meaning">需要</td>
+                </tr>
+                <tr>
+                    <td class="word">next</td>
+                    <td class="pos">adv.</td>
+                    <td class="phonetic">/nekst/</td>
+                    <td class="meaning">然后，接着</td>
+                </tr>
+
+                <!-- O -->
+                <tr class="letter-header">
+                    <td colspan="4">O</td>
+                </tr>
+                <tr>
+                    <td class="word">on foot</td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">步行</td>
+                </tr>
+                <tr>
+                    <td class="word">once</td>
+                    <td class="pos">adv.</td>
+                    <td class="phonetic">/wʌns/</td>
+                    <td class="meaning">一次</td>
+                </tr>
+
+                <!-- P -->
+                <tr class="letter-header">
+                    <td colspan="4">P</td>
+                </tr>
+                <tr>
+                    <td class="word">part</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/pɑːt/</td>
+                    <td class="meaning">部分</td>
+                </tr>
+                <tr>
+                    <td class="word">party</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈpɑːti/</td>
+                    <td class="meaning">聚会</td>
+                </tr>
+                <tr>
+                    <td class="word">pavement</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈpeɪvmənt/</td>
+                    <td class="meaning">人行道</td>
+                </tr>
+                <tr>
+                    <td class="word">plan</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/plæn/</td>
+                    <td class="meaning">计划</td>
+                </tr>
+                <tr>
+                    <td class="word">plane</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/pleɪn/</td>
+                    <td class="meaning">飞机</td>
+                </tr>
+                <tr>
+                    <td class="word">play/show</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">戏剧，表演</td>
+                </tr>
+                <tr>
+                    <td class="word">pocket</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈpɒkɪt/</td>
+                    <td class="meaning">口袋</td>
+                </tr>
+                <tr>
+                    <td class="word">poor</td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/pɔːr/</td>
+                    <td class="meaning">可怜的</td>
+                </tr>
+                <tr>
+                    <td class="word">present</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈpreznt/</td>
+                    <td class="meaning">礼物</td>
+                </tr>
+                <tr>
+                    <td class="word">pull ... out</td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">把...拉/拔出来</td>
+                </tr>
+                <tr>
+                    <td class="word">put on</td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">穿上（衣物）</td>
+                </tr>
+
+                <!-- Q -->
+                <tr class="letter-header">
+                    <td colspan="4">Q</td>
+                </tr>
+                <tr>
+                    <td class="word">quickly</td>
+                    <td class="pos">adv.</td>
+                    <td class="phonetic">/ˈkwɪkli/</td>
+                    <td class="meaning">快速地</td>
+                </tr>
+
+                <!-- R -->
+                <tr class="letter-header">
+                    <td colspan="4">R</td>
+                </tr>
+                <tr>
+                    <td class="word">raindrop</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈreɪndrɒp/</td>
+                    <td class="meaning">雨滴</td>
+                </tr>
+                <tr>
+                    <td class="word">rescue</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/ˈreskjuː/</td>
+                    <td class="meaning">营救，解救</td>
+                </tr>
+                <tr>
+                    <td class="word">report</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/rɪˈpɔːt/</td>
+                    <td class="meaning">报告</td>
+                </tr>
+                <tr>
+                    <td class="word">right</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/raɪt/</td>
+                    <td class="meaning">右边</td>
+                </tr>
+                <tr>
+                    <td class="word">rise up</td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">升起</td>
+                </tr>
+
+                <!-- S -->
+                <tr class="letter-header">
+                    <td colspan="4">S</td>
+                </tr>
+                <tr>
+                    <td class="word">safety</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈseɪfti/</td>
+                    <td class="meaning">安全</td>
+                </tr>
+                <tr>
+                    <td class="word">save</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/seɪv/</td>
+                    <td class="meaning">挽救</td>
+                </tr>
+                <tr>
+                    <td class="word">score</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/skɔːr/</td>
+                    <td class="meaning">得（分）</td>
+                </tr>
+                <tr>
+                    <td class="word">second</td>
+                    <td class="pos">num.</td>
+                    <td class="phonetic">/ˈsekənd/</td>
+                    <td class="meaning">第二</td>
+                </tr>
+                <tr>
+                    <td class="word">sell</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/sel/</td>
+                    <td class="meaning">卖，销售</td>
+                </tr>
+                <tr>
+                    <td class="word">shop</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ʃɒp/</td>
+                    <td class="meaning">商店</td>
+                </tr>
+                <tr>
+                    <td class="word">shop assistant</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">售货员</td>
+                </tr>
+                <tr>
+                    <td class="word">side</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/saɪd/</td>
+                    <td class="meaning">边</td>
+                </tr>
+                <tr>
+                    <td class="word">sign</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/saɪn/</td>
+                    <td class="meaning">标志，标识</td>
+                </tr>
+                <tr>
+                    <td class="word">sink</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/sɪŋk/</td>
+                    <td class="meaning">下沉</td>
+                </tr>
+                <tr>
+                    <td class="word">slowly</td>
+                    <td class="pos">adv.</td>
+                    <td class="phonetic">/ˈsləʊli/</td>
+                    <td class="meaning">缓慢地</td>
+                </tr>
+                <tr>
+                    <td class="word">softly</td>
+                    <td class="pos">adv.</td>
+                    <td class="phonetic">/ˈsɒftli/</td>
+                    <td class="meaning">轻轻地，柔和地</td>
+                </tr>
+                <tr>
+                    <td class="word">south</td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/saʊθ/</td>
+                    <td class="meaning">南方的</td>
+                </tr>
+                <tr>
+                    <td class="word">star</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/stɑːr/</td>
+                    <td class="meaning">明星（体育/影视）</td>
+                </tr>
+                <tr>
+                    <td class="word">stay</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/steɪ/</td>
+                    <td class="meaning">待，停留</td>
+                </tr>
+                <tr>
+                    <td class="word">strongly</td>
+                    <td class="pos">adv.</td>
+                    <td class="phonetic">/ˈstrɒŋli/</td>
+                    <td class="meaning">强烈地</td>
+                </tr>
+                <tr>
+                    <td class="word">Sunday</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈsʌndeɪ/</td>
+                    <td class="meaning">星期日</td>
+                </tr>
+
+                <!-- T -->
+                <tr class="letter-header">
+                    <td colspan="4">T</td>
+                </tr>
+                <tr>
+                    <td class="word">take</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/teɪk/</td>
+                    <td class="meaning">乘坐</td>
+                </tr>
+                <tr>
+                    <td class="word">talk</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/tɔːk/</td>
+                    <td class="meaning">交谈</td>
+                </tr>
+                <tr>
+                    <td class="word">taxi</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈtæksi/</td>
+                    <td class="meaning">出租车</td>
+                </tr>
+                <tr>
+                    <td class="word">teapot</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈtiːpɒt/</td>
+                    <td class="meaning">茶壶</td>
+                </tr>
+                <tr>
+                    <td class="word">the Stone Age</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">石器时代</td>
+                </tr>
+                <tr>
+                    <td class="word">the Three Gorges</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">三峡</td>
+                </tr>
+                <tr>
+                    <td class="word">the Yangtze River</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">长江</td>
+                </tr>
+                <tr>
+                    <td class="word">then</td>
+                    <td class="pos">adv.</td>
+                    <td class="phonetic">/ðen/</td>
+                    <td class="meaning">然后</td>
+                </tr>
+                <tr>
+                    <td class="word">through</td>
+                    <td class="pos">prep.</td>
+                    <td class="phonetic">/θruː/</td>
+                    <td class="meaning">穿过</td>
+                </tr>
+                <tr>
+                    <td class="word">throw ... to</td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">把...扔向</td>
+                </tr>
+                <tr>
+                    <td class="word">together</td>
+                    <td class="pos">adv.</td>
+                    <td class="phonetic">/təˈɡeðər/</td>
+                    <td class="meaning">一起，共同</td>
+                </tr>
+                <tr>
+                    <td class="word">ticket</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈtɪkɪt/</td>
+                    <td class="meaning">票，入场券</td>
+                </tr>
+                <tr>
+                    <td class="word">toothache</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈtuːθeɪk/</td>
+                    <td class="meaning">牙痛</td>
+                </tr>
+                <tr>
+                    <td class="word">seafood</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈsiːfuːd/</td>
+                    <td class="meaning">海鲜，海产品</td>
+                </tr>
+                <tr>
+                    <td class="word">traffic light(s)</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">交通信号灯</td>
+                </tr>
+                <tr>
+                    <td class="word">train</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/treɪn/</td>
+                    <td class="meaning">火车</td>
+                </tr>
+                <tr>
+                    <td class="word">travel</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/ˈtrævl/</td>
+                    <td class="meaning">旅行</td>
+                </tr>
+                <tr>
+                    <td class="word">try on</td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">试穿</td>
+                </tr>
+                <tr>
+                    <td class="word">turn</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/tɜːn/</td>
+                    <td class="meaning">转（弯）</td>
+                </tr>
+                <tr>
+                    <td class="word">turn (to be)</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/tɜːn/</td>
+                    <td class="meaning">变得</td>
+                </tr>
+
+                <!-- U -->
+                <tr class="letter-header">
+                    <td colspan="4">U</td>
+                </tr>
+                <tr>
+                    <td class="word">underground</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈʌndəɡraʊnd/</td>
+                    <td class="meaning">地铁</td>
+                </tr>
+                <tr>
+                    <td class="word">underground station</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">地铁站</td>
+                </tr>
+
+                <!-- V -->
+                <tr class="letter-header">
+                    <td colspan="4">V</td>
+                </tr>
+                <tr>
+                    <td class="word">visit</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/ˈvɪzɪt/</td>
+                    <td class="meaning">参观，拜访</td>
+                </tr>
+
+                <!-- W -->
+                <tr class="letter-header">
+                    <td colspan="4">W</td>
+                </tr>
+                <tr>
+                    <td class="word">weekend</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˌwiːkˈend/</td>
+                    <td class="meaning">周末</td>
+                </tr>
+                <tr>
+                    <td class="word">well</td>
+                    <td class="pos">adv.</td>
+                    <td class="phonetic">/wel/</td>
+                    <td class="meaning">健康的，令人满意地</td>
+                </tr>
+                <tr>
+                    <td class="word">exclaim/shout</td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">喊，叫喊</td>
+                </tr>
+                <tr>
+                    <td class="word">wet</td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/wet/</td>
+                    <td class="meaning">湿的</td>
+                </tr>
+                <tr>
+                    <td class="word">a lot of/a little/some</td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">大量/少量</td>
+                </tr>
+                <tr>
+                    <td class="word">wild</td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/waɪld/</td>
+                    <td class="meaning">野生的</td>
+                </tr>
+                <tr>
+                    <td class="word">wood</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/wʊd/</td>
+                    <td class="meaning">木头，木材</td>
+                </tr>
+                <tr>
+                    <td class="word">wolf</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/wʊlf/</td>
+                    <td class="meaning">狼</td>
+                </tr>
+                <tr>
+                    <td class="word">win an award</td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">获奖</td>
+                </tr>
+
+                <!-- Z -->
+                <tr class="letter-header">
+                    <td colspan="4">Z</td>
+                </tr>
+                <tr>
+                    <td class="word">zebra crossing</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">-</td>
+                    <td class="meaning">人行横道线</td>
+                </tr>
+                <tr>
+                    <td class="word">zip</td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/zɪp/</td>
+                    <td class="meaning">拉链</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+                <!-- Daily Expressions Section -->
+        <div class="daily-expressions-section">
+            <h2>📢 Daily Expressions (日常用语)</h2>
+            <div class="expr-grid">
+                <div class="expr-item">
+                    <span class="expr-text">That sounds interesting.</span>
+                    <span class="expr-cn">听起来很有趣。</span>
+                    <span class="expr-unit">M1U1</span>
+                </div>
+                <div class="expr-item">
+                    <span class="expr-text">What do you think...?</span>
+                    <span class="expr-cn">你认为...怎样？</span>
+                    <span class="expr-unit">M1U1</span>
+                </div>
+                <div class="expr-item">
+                    <span class="expr-text">I can't wait.</span>
+                    <span class="expr-cn">我迫不及待了。</span>
+                    <span class="expr-unit">M1U1</span>
+                </div>
+                <div class="expr-item">
+                    <span class="expr-text">What's wrong with you?</span>
+                    <span class="expr-cn">你怎么了？/你哪里不舒服？</span>
+                    <span class="expr-unit">M1U1</span>
+                </div>
+                <div class="expr-item">
+                    <span class="expr-text">That's correct.</span>
+                    <span class="expr-cn">正确。</span>
+                    <span class="expr-unit">M1U2</span>
+                </div>
+                <div class="expr-item">
+                    <span class="expr-text">How do you feel?</span>
+                    <span class="expr-cn">你感觉怎么样？</span>
+                    <span class="expr-unit">M2U1</span>
+                </div>
+                <div class="expr-item">
+                    <span class="expr-text">What's there?</span>
+                    <span class="expr-cn">那里有什么？</span>
+                    <span class="expr-unit">M2U1</span>
+                </div>
+                <div class="expr-item">
+                    <span class="expr-text">You'll be better soon.</span>
+                    <span class="expr-cn">你很快会好起来的。</span>
+                    <span class="expr-unit">M2U1</span>
+                </div>
+                <div class="expr-item">
+                    <span class="expr-text">Are you all right...?</span>
+                    <span class="expr-cn">你还好吗？</span>
+                    <span class="expr-unit">M2U1</span>
+                </div>
+                <div class="expr-item">
+                    <span class="expr-text">你准备好去发现新东西了吗？</span>
+                    <span class="expr-cn">M2U1</span>
+                    <span class="expr-unit">M2U1</span>
+                </div>
+                <div class="expr-item">
+                    <span class="expr-text">I'm OK.</span>
+                    <span class="expr-cn">我没事。</span>
+                    <span class="expr-unit">M2U1</span>
+                </div>
+                <div class="expr-item">
+                    <span class="expr-text">Oh dear!</span>
+                    <span class="expr-cn">噢，天哪！</span>
+                    <span class="expr-unit">M2U2</span>
+                </div>
+                <div class="expr-item">
+                    <span class="expr-text">Let's wait and see!</span>
+                    <span class="expr-cn">让我们等着瞧！</span>
+                    <span class="expr-unit">2U2</span>
+                </div>
+                <div class="expr-item">
+                    <span class="expr-text">Would you like some of...</span>
+                    <span class="expr-cn">你想要一些...吗？</span>
+                    <span class="expr-unit">M4U1</span>
+                </div>
+                <div class="expr-item">
+                    <span class="expr-text">我对你感到骄傲!</span>
+                    <span class="expr-cn">I'm proud of you!</span>
+                    <span class="expr-unit">M2U2</span>
+                </div>
+                <div class="expr-item">
+                    <span class="expr-text">I agree.</span>
+                    <span class="expr-cn">我同意。</span>
+                    <span class="expr-unit">M4U1</span>
+                </div>
+                <div class="expr-item">
+                    <span class="expr-text">Congratulations!</span>
+                    <span class="expr-cn">恭喜！</span>
+                    <span class="expr-unit">M3U1</span>
+                </div>
+                <div class="expr-item">
+                    <span class="expr-text">It tastes great!</span>
+                    <span class="expr-cn">味道很好！</span>
+                    <span class="expr-unit">M4U1</span>
+                </div>
+                <div class="expr-item">
+                    <span class="expr-text">Right!</span>
+                    <span class="expr-cn">对了！</span>
+                    <span class="expr-unit">M3U1</span>
+                </div>
+                <div class="expr-item">
+                    <span class="expr-text">Great idea!</span>
+                    <span class="expr-cn">好主意！</span>
+                    <span class="expr-unit">M4U2</span>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        <table class="word-table" style="display:none;">
+            </tbody>
+        </table>
+
+        <!-- 引用来源 Reference Section -->
+        <div class="reference-section">
+            <h2>📖 原始资料引用 (Source References)</h2>
+            <p class="reference-intro">以下图片为沪教版五年级英语上册（牛津上海版）电子课本单词表原始截图，仅供学习参考使用。</p>
+
+            <div class="image-gallery">
+                <div class="image-item">
+                    <img src="images5s/page1.png" alt="单词表第1页">
+                    <div class="image-caption">
+                        <strong>第1页</strong> - 单词 A-F
+                    </div>
+                </div>
+
+                <div class="image-item">
+                    <img src="images5s/page2.png" alt="单词表第2页">
+                    <div class="image-caption">
+                        <strong>第2页</strong> - 单词 G-M
+                    </div>
+                </div>
+
+                <div class="image-item">
+                    <img src="images5s/page3.png" alt="单词表第3页">
+                    <div class="image-caption">
+                        <strong>第3页</strong> - 单词 N-S
+                    </div>
+                </div>
+
+                <div class="image-item">
+                    <img src="images5s/page4.png" alt="单词表第4页">
+                    <div class="image-caption">
+                        <strong>第4页</strong> - 单词 T-Z
+                    </div>
+                </div>
+
+                <div class="image-item">
+                    <img src="images5s/page5.png" alt="日常用语">
+                    <div class="image-caption">
+                        <strong>第5页</strong> - Daily Expressions 日常用语
+                    </div>
+                </div>
+            </div>
+
+            <p class="copyright-notice">
+                📚 来源：<a href="https://xueba5.com/hujiaoban/yingyux5s_54sh/133702.html" target="_blank">xueba5.com -
+                    沪教版五年级英语上册单词表</a><br>
+                本页面仅供个人学习使用，版权归原作者所有。
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // 发音功能 - 使用 Web Speech API
+        const speakerIcon = `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>`;
+
+        // 创建发音按钮
+        function createSpeakButton(word) {
+            const btn = document.createElement('button');
+            btn.className = 'speak-btn';
+            btn.innerHTML = speakerIcon;
+            btn.title = '点击发音';
+            btn.onclick = function (e) {
+                e.stopPropagation();
+                speakWord(word, btn);
+            };
+            return btn;
+        }
+
+        // 发音函数
+        function speakWord(word, btn) {
+            // 取消正在播放的语音
+            window.speechSynthesis.cancel();
+
+            // 移除所有按钮的 playing 状态
+            document.querySelectorAll('.speak-btn.playing').forEach(b => b.classList.remove('playing'));
+
+            const utterance = new SpeechSynthesisUtterance(word);
+            utterance.lang = 'en-US';
+            utterance.rate = 0.85; // 稍慢的语速，适合学习
+            utterance.pitch = 1;
+
+            // 尝试选择较好的英语语音
+            const voices = window.speechSynthesis.getVoices();
+            const englishVoice = voices.find(voice =>
+                voice.lang.includes('en') && (voice.name.includes('Google') || voice.name.includes('Microsoft') || voice.name.includes('Samantha'))
+            ) || voices.find(voice => voice.lang.includes('en-US')) || voices.find(voice => voice.lang.includes('en'));
+
+            if (englishVoice) {
+                utterance.voice = englishVoice;
+            }
+
+            // 添加播放状态
+            btn.classList.add('playing');
+
+            utterance.onend = function () {
+                btn.classList.remove('playing');
+            };
+
+            utterance.onerror = function () {
+                btn.classList.remove('playing');
+            };
+
+            window.speechSynthesis.speak(utterance);
+        }
+
+        // 防止重复添加按钮
+        let buttonsInitialized = false;
+
+        // 为所有单词添加发音按钮
+        function initSpeakButtons() {
+            // 如果已经初始化过，直接返回
+            if (buttonsInitialized) return;
+            buttonsInitialized = true;
+
+            // 单词表中的单词
+            document.querySelectorAll('.word-table tbody tr:not(.letter-header) td.word').forEach(td => {
+                const word = td.textContent.trim();
+                if (word && word !== '-') {
+                    const btn = createSpeakButton(word);
+                    td.appendChild(btn);
+                }
+            });
+
+            // 日常用语中的英文表达
+            document.querySelectorAll('.expr-text').forEach(span => {
+                const text = span.textContent.trim();
+                // 检查是否是英文（不是纯中文）
+                if (text && !/^[\u4e00-\u9fa5。，！？、]+$/.test(text)) {
+                    const btn = createSpeakButton(text);
+                    btn.style.marginLeft = '5px';
+                    btn.style.flexShrink = '0';
+                    span.parentElement.insertBefore(btn, span.nextSibling);
+                }
+            });
+        }
+
+        // 等待语音引擎加载完成
+        if (window.speechSynthesis.getVoices().length === 0) {
+            window.speechSynthesis.onvoiceschanged = initSpeakButtons;
+        } else {
+            initSpeakButtons();
+        }
+
+        // 备用：确保按钮被添加
+        window.addEventListener('load', function () {
+            setTimeout(initSpeakButtons, 500);
+        });
+    </script>
+
+</body>
+
+</html>
