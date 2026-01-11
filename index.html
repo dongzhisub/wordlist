@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>沪教版小学英语单词表汇总</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif; 
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); 
+            min-height: 100vh; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container { 
+            max-width: 800px; 
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h1 { 
+            color: #333; 
+            margin-bottom: 15px; 
+            font-size: 2.2em;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p.subtitle {
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            text-decoration: none;
+            color: #333;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-left: 5px solid transparent;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        .card h2 {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+        .card span {
+            font-size: 0.9em;
+            color: #888;
+            display: block;
+            text-align: left;
+        }
+        .card svg {
+            width: 24px;
+            height: 24px;
+            fill: #ccc;
+            transition: all 0.3s ease;
+        }
+        .card:hover svg {
+            transform: translateX(5px);
+            fill: currentColor;
+        }
+        
+        /* Gradients for different grades */
+        .grade-3s { border-color: #667eea; }
+        .grade-3s:hover h2 { color: #667eea; }
+        .grade-3s:hover svg { fill: #667eea; }
+        
+        .grade-3x { border-color: #f6d365; }
+        .grade-3x:hover h2 { color: #e67e22; }
+        .grade-3x:hover svg { fill: #e67e22; }
+
+        .grade-4s { border-color: #4facfe; }
+        .grade-4s:hover h2 { color: #00f2fe; }
+        .grade-4s:hover svg { fill: #00f2fe; }
+
+        .grade-5x { border-color: #ff9a9e; }
+        .grade-5x:hover h2 { color: #fe8f8f; }
+        .grade-5x:hover svg { fill: #fe8f8f; }
+
+        .footer {
+            margin-top: 40px;
+            color: #999;
+            font-size: 0.9em;
+        }
+        .footer a { 
+            color: #764ba2;
+            text-decoration: none;
+        }
+        .footer a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 沪教版小学英语单词表</h1>
+        <p class="subtitle">牛津上海版电子课本配套单词表整理</p>
+        
+        <div class="card-grid">
+            <a href="vocabulary-3s.html" class="card grade-3s">
+                <div>
+                    <h2>三年级上册 (Grade 3 Semester 1)</h2>
+                    <span>222 Words • 4 Pages</span>
+                </div>
+                <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+            </a>
+
+            <a href="vocabulary-3x.html" class="card grade-3x">
+                <div>
+                    <h2>三年级下册 (Grade 3 Semester 2)</h2>
+                    <span>175 Words • 15 Expressions</span>
+                </div>
+                <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+            </a>
+
+            <a href="vocabulary-4s.html" class="card grade-4s">
+                <div>
+                    <h2>四年级上册 (Grade 4 Semester 1)</h2>
+                    <span>265 Words • 5 Pages</span>
+                </div>
+                <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+            </a>
+            
+            <a href="vocabulary-5x.html" class="card grade-5x">
+                <div>
+                    <h2>五年级下册 (Grade 5 Semester 2)</h2>
+                    <span>239 Words • 18 Expressions</span>
+                </div>
+                <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>Generated by AI Agent. Source: <a href="https://xueba5.com" target="_blank">xueba5.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
