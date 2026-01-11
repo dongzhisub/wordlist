@@ -250,6 +250,65 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        /* 发音按钮样式 */
+        .speak-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 8px;
+            transition: all 0.3s ease;
+            vertical-align: middle;
+            box-shadow: 0 2px 5px rgba(102, 126, 234, 0.3);
+        }
+
+        .speak-btn:hover {
+            transform: scale(1.15);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5);
+        }
+
+        .speak-btn:active {
+            transform: scale(0.95);
+        }
+
+        .speak-btn.playing {
+            animation: pulse 0.8s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+                box-shadow: 0 2px 5px rgba(102, 126, 234, 0.3);
+            }
+
+            50% {
+                transform: scale(1.1);
+                box-shadow: 0 4px 15px rgba(102, 126, 234, 0.6);
+            }
+        }
+
+        .speak-btn svg {
+            width: 14px;
+            height: 14px;
+            fill: white;
+        }
+
+        .word-cell {
+            display: flex;
+            align-items: center;
+        }
+
+        .word-cell .word {
+            flex: 1;
+        }
     </style>
 </head>
 
@@ -1710,6 +1769,105 @@
             </p>
         </div>
     </div>
+
+    <script>
+        // 发音功能 - 使用 Web Speech API
+        const speakerIcon = `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>`;
+
+        // 创建发音按钮
+        function createSpeakButton(word) {
+            const btn = document.createElement('button');
+            btn.className = 'speak-btn';
+            btn.innerHTML = speakerIcon;
+            btn.title = '点击发音';
+            btn.onclick = function (e) {
+                e.stopPropagation();
+                speakWord(word, btn);
+            };
+            return btn;
+        }
+
+        // 发音函数
+        function speakWord(word, btn) {
+            // 取消正在播放的语音
+            window.speechSynthesis.cancel();
+
+            // 移除所有按钮的 playing 状态
+            document.querySelectorAll('.speak-btn.playing').forEach(b => b.classList.remove('playing'));
+
+            const utterance = new SpeechSynthesisUtterance(word);
+            utterance.lang = 'en-US';
+            utterance.rate = 0.85; // 稍慢的语速，适合学习
+            utterance.pitch = 1;
+
+            // 尝试选择较好的英语语音
+            const voices = window.speechSynthesis.getVoices();
+            const englishVoice = voices.find(voice =>
+                voice.lang.includes('en') && (voice.name.includes('Google') || voice.name.includes('Microsoft') || voice.name.includes('Samantha'))
+            ) || voices.find(voice => voice.lang.includes('en-US')) || voices.find(voice => voice.lang.includes('en'));
+
+            if (englishVoice) {
+                utterance.voice = englishVoice;
+            }
+
+            // 添加播放状态
+            btn.classList.add('playing');
+
+            utterance.onend = function () {
+                btn.classList.remove('playing');
+            };
+
+            utterance.onerror = function () {
+                btn.classList.remove('playing');
+            };
+
+            window.speechSynthesis.speak(utterance);
+        }
+
+        // 防止重复添加按钮
+        let buttonsInitialized = false;
+
+        // 为所有单词添加发音按钮
+        function initSpeakButtons() {
+            // 如果已经初始化过，直接返回
+            if (buttonsInitialized) return;
+            buttonsInitialized = true;
+
+            // 单词表中的单词
+            document.querySelectorAll('.word-table tbody tr:not(.letter-header) td.word').forEach(td => {
+                const word = td.textContent.trim();
+                if (word && word !== '-') {
+                    const btn = createSpeakButton(word);
+                    td.appendChild(btn);
+                }
+            });
+
+            // 日常用语中的英文表达
+            document.querySelectorAll('.expr-text').forEach(span => {
+                const text = span.textContent.trim();
+                // 检查是否是英文（不是纯中文）
+                if (text && !/^[\u4e00-\u9fa5。，！？、]+$/.test(text)) {
+                    const btn = createSpeakButton(text);
+                    btn.style.marginLeft = '5px';
+                    btn.style.flexShrink = '0';
+                    span.parentElement.insertBefore(btn, span.nextSibling);
+                }
+            });
+        }
+
+        // 等待语音引擎加载完成
+        if (window.speechSynthesis.getVoices().length === 0) {
+            window.speechSynthesis.onvoiceschanged = initSpeakButtons;
+        } else {
+            initSpeakButtons();
+        }
+
+        // 备用：确保按钮被添加
+        window.addEventListener('load', function () {
+            setTimeout(initSpeakButtons, 500);
+        });
+    </script>
+
 </body>
 
 </html>
