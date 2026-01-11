@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>沪教版三年级英语下册 - 单词表</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif; background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); min-height: 100vh; padding: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 { text-align: center; color: white; margin-bottom: 30px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); font-size: 2.5em; }
+        .word-table { width: 100%; border-collapse: collapse; background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); margin-bottom: 30px; }
+        .word-table th { background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); color: white; padding: 15px; text-align: left; font-size: 1.1em; }
+        .word-table td { padding: 12px 15px; border-bottom: 1px solid #eee; }
+        .word-table tr:hover { background: linear-gradient(90deg, #fff9f0 0%, #fff 100%); }
+        .word { font-weight: bold; color: #333; font-size: 1.1em; }
+        .pos { color: #f6d365; font-style: italic; font-size: 0.95em; }
+        .phonetic { color: #888; font-family: 'Lucida Sans Unicode', sans-serif; }
+        .meaning { color: #555; }
+        .unit { color: #f59e0b; font-size: 0.85em; font-weight: bold; }
+        .letter-header { background: linear-gradient(90deg, #fff5e6 0%, #fff 100%); font-weight: bold; font-size: 1.3em; color: #e67e22; }
+        .letter-header td { padding: 10px 15px; border-left: 4px solid #e67e22; }
+        .reference-section { background: rgba(255, 255, 255, 0.95); padding: 30px; border-radius: 15px; margin-top: 30px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); }
+        .reference-section h2 { color: #e67e22; margin-bottom: 15px; font-size: 1.8em; }
+        .reference-intro { color: #666; margin-bottom: 25px; font-size: 1.1em; }
+        .image-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 25px; }
+        .image-item { background: #fffcf5; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; }
+        .image-item:hover { transform: translateY(-5px); }
+        .image-item img { width: 100%; height: auto; display: block; }
+        .image-caption { padding: 15px; color: #555; font-size: 0.95em; }
+        .image-caption strong { color: #f39c12; }
+        .copyright-notice { color: #888; font-size: 0.9em; text-align: center; padding-top: 20px; border-top: 1px solid #eee; }
+        .copyright-notice a { color: #e67e22; text-decoration: none; }
+        .copyright-notice a:hover { text-decoration: underline; }
+        .speak-btn { background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); border: none; border-radius: 50%; width: 28px; height: 28px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; margin-left: 8px; transition: all 0.3s ease; vertical-align: middle; box-shadow: 0 2px 5px rgba(243, 156, 18, 0.3); }
+        .speak-btn:hover { transform: scale(1.15); box-shadow: 0 4px 12px rgba(243, 156, 18, 0.5); }
+        .speak-btn:active { transform: scale(0.95); }
+        .speak-btn.playing { animation: pulse 0.8s ease-in-out infinite; }
+        @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
+        .speak-btn svg { width: 14px; height: 14px; fill: white; }
+        .word-cell { display: flex; align-items: center; }
+        .word-cell .word { flex: 1; }
+        
+        .daily-section { margin-top: 40px; margin-bottom: 30px; }
+        .daily-title { text-align: center; color: #e67e22; margin-bottom: 20px; font-size: 2em; text-shadow: 1px 1px 2px rgba(0,0,0,0.1); }
+        .daily-table { width: 100%; border-collapse: collapse; background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); }
+        .daily-table th { background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); color: white; padding: 15px; text-align: left; }
+        .daily-table td { padding: 15px; border-bottom: 1px solid #eee; font-size: 1.1em; }
+        .daily-table tr:hover { background-color: #fff9f0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 沪教版三年级英语下册 单词表</h1>
+        <table class="word-table">
+            <thead>
+                <tr>
+                    <th style="width:22%">单词 Word</th>
+                    <th style="width:8%">词性</th>
+                    <th style="width:18%">音标 Phonetic</th>
+                    <th style="width:8%">单元</th>
+                    <th style="width:44%">中文意思 Meaning</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="letter-header">
+                    <td colspan="5">A</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">aeroplane</span><button class="speak-btn" onclick="speak('aeroplane')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈeərəpleɪn/</td>
+                    <td class="unit">M1U1</td>
+                    <td class="meaning">飞机</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">afraid</span><button class="speak-btn" onclick="speak('afraid')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/əˈfreɪd/</td>
+                    <td class="unit">M4U3</td>
+                    <td class="meaning">害怕的</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">angry</span><button class="speak-btn" onclick="speak('angry')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/ˈæŋɡri/</td>
+                    <td class="unit">M2U1</td>
+                    <td class="meaning">生气的</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">arm</span><button class="speak-btn" onclick="speak('arm')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ɑːm/</td>
+                    <td class="unit">M4U1</td>
+                    <td class="meaning">手臂</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">autumn</span><button class="speak-btn" onclick="speak('autumn')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈɔːtəm/</td>
+                    <td class="unit">M3U2</td>
+                    <td class="meaning">秋天</td>
+                </tr>
+                <tr class="letter-header">
+                    <td colspan="5">B</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">bad</span><button class="speak-btn" onclick="speak('bad')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/bæd/</td>
+                    <td class="unit">M4U3</td>
+                    <td class="meaning">坏的</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">bag</span><button class="speak-btn" onclick="speak('bag')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/bæɡ/</td>
+                    <td class="unit">M1U2</td>
+                    <td class="meaning">包</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">beach</span><button class="speak-btn" onclick="speak('beach')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/biːtʃ/</td>
+                    <td class="unit">M3U3</td>
+                    <td class="meaning">海滩</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">bitter</span><button class="speak-btn" onclick="speak('bitter')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/ˈbɪtə(r)/</td>
+                    <td class="unit">M1U3</td>
+                    <td class="meaning">苦的</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">body</span><button class="speak-btn" onclick="speak('body')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈbɒdi/</td>
+                    <td class="unit">M4U1</td>
+                    <td class="meaning">身体；躯干</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">boil</span><button class="speak-btn" onclick="speak('boil')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/bɔɪl/</td>
+                    <td class="unit">M4U3</td>
+                    <td class="meaning">煮沸</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">bread</span><button class="speak-btn" onclick="speak('bread')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/bred/</td>
+                    <td class="unit">M1U2</td>
+                    <td class="meaning">面包</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">bus</span><button class="speak-btn" onclick="speak('bus')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/bʌs/</td>
+                    <td class="unit">M1U1</td>
+                    <td class="meaning">公共汽车</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">busy</span><button class="speak-btn" onclick="speak('busy')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/ˈbɪzi/</td>
+                    <td class="unit">M3U2</td>
+                    <td class="meaning">忙碌的</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">by</span><button class="speak-btn" onclick="speak('by')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">prep.</td>
+                    <td class="phonetic">/baɪ/</td>
+                    <td class="unit">M1U1</td>
+                    <td class="meaning">在……旁边</td>
+                </tr>
+                <tr class="letter-header">
+                    <td colspan="5">C</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">car</span><button class="speak-btn" onclick="speak('car')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/kɑː(r)/</td>
+                    <td class="unit">M1U1</td>
+                    <td class="meaning">小汽车</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">chair</span><button class="speak-btn" onclick="speak('chair')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/tʃeə(r)/</td>
+                    <td class="unit">M1U1</td>
+                    <td class="meaning">椅子</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">children</span><button class="speak-btn" onclick="speak('children')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈtʃɪldrən/</td>
+                    <td class="unit">M1U1</td>
+                    <td class="meaning">（复数）儿童，小孩</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">Children's Day</span><button class="speak-btn" onclick="speak('Children's')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">/ˈtʃɪldrənz deɪ/</td>
+                    <td class="unit">M4U2</td>
+                    <td class="meaning">儿童节</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">China</span><button class="speak-btn" onclick="speak('China')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">/ˈtʃaɪnə/</td>
+                    <td class="unit">M4U2</td>
+                    <td class="meaning">中国</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">cinema</span><button class="speak-btn" onclick="speak('cinema')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈsɪnəmə/</td>
+                    <td class="unit">M4U2</td>
+                    <td class="meaning">电影院</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">circle</span><button class="speak-btn" onclick="speak('circle')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈsɜːkl/</td>
+                    <td class="unit">M3U1</td>
+                    <td class="meaning">圆形</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">clever</span><button class="speak-btn" onclick="speak('clever')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/ˈklevə(r)/</td>
+                    <td class="unit">M2U1</td>
+                    <td class="meaning">聪明的</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">clock</span><button class="speak-btn" onclick="speak('clock')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/klɒk/</td>
+                    <td class="unit">M2U1</td>
+                    <td class="meaning">钟</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">clothes</span><button class="speak-btn" onclick="speak('clothes')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/kləʊðz/</td>
+                    <td class="unit">M2U3</td>
+                    <td class="meaning">衣服</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">coffee</span><button class="speak-btn" onclick="speak('coffee')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈkɒfi/</td>
+                    <td class="unit">M1U3</td>
+                    <td class="meaning">咖啡</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">cold</span><button class="speak-btn" onclick="speak('cold')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/kəʊld/</td>
+                    <td class="unit">M3U2</td>
+                    <td class="meaning">冷的</td>
+                </tr>
+                <tr class="letter-header">
+                    <td colspan="5">D</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">do</span><button class="speak-btn" onclick="speak('do')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">aux. v.</td>
+                    <td class="phonetic">/duː/</td>
+                    <td class="unit">M1U2</td>
+                    <td class="meaning">（助动词）</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">does</span><button class="speak-btn" onclick="speak('does')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">aux. v.</td>
+                    <td class="phonetic">/dʌz/</td>
+                    <td class="unit">M1U2</td>
+                    <td class="meaning">（助动词）</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">doll</span><button class="speak-btn" onclick="speak('doll')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/dɒl/</td>
+                    <td class="unit">M2U2</td>
+                    <td class="meaning">玩具娃娃</td>
+                </tr>
+                <tr class="letter-header">
+                    <td colspan="5">E</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">easy</span><button class="speak-btn" onclick="speak('easy')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/ˈiːzi/</td>
+                    <td class="unit">M4U1</td>
+                    <td class="meaning">简单的；容易的</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">elephant</span><button class="speak-btn" onclick="speak('elephant')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈelɪfənt/</td>
+                    <td class="unit">M2U1</td>
+                    <td class="meaning">大象</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">else</span><button class="speak-btn" onclick="speak('else')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">adv.</td>
+                    <td class="phonetic">/els/</td>
+                    <td class="unit">M1U1</td>
+                    <td class="meaning">其他的，别的</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">English</span><button class="speak-btn" onclick="speak('English')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈɪŋɡlɪʃ/</td>
+                    <td class="unit">M2U3</td>
+                    <td class="meaning">英语</td>
+                </tr>
+                <tr class="letter-header">
+                    <td colspan="5">F</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">fifth</span><button class="speak-btn" onclick="speak('fifth')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">num.</td>
+                    <td class="phonetic">/fɪfθ/</td>
+                    <td class="unit">M4U2</td>
+                    <td class="meaning">第五</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">finally</span><button class="speak-btn" onclick="speak('finally')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">adv.</td>
+                    <td class="phonetic">/ˈfaɪnəli/</td>
+                    <td class="unit">M2U1</td>
+                    <td class="meaning">最后，终于</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">finger</span><button class="speak-btn" onclick="speak('finger')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈfɪŋɡə(r)/</td>
+                    <td class="unit">M4U1</td>
+                    <td class="meaning">手指</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">first</span><button class="speak-btn" onclick="speak('first')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">num.</td>
+                    <td class="phonetic">/fɜːst/</td>
+                    <td class="unit">M4U2</td>
+                    <td class="meaning">第一</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">food</span><button class="speak-btn" onclick="speak('food')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/fuːd/</td>
+                    <td class="unit">M1U2</td>
+                    <td class="meaning">食物</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">foot (feet)</span><button class="speak-btn" onclick="speak('foot')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/fʊt/</td>
+                    <td class="unit">M4U1</td>
+                    <td class="meaning">脚</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">for</span><button class="speak-btn" onclick="speak('for')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">prep.</td>
+                    <td class="phonetic">/fɔː(r)/</td>
+                    <td class="unit">M4U2</td>
+                    <td class="meaning">给，对，为</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">fourteenth</span><button class="speak-btn" onclick="speak('fourteenth')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">num.</td>
+                    <td class="phonetic">/ˌfɔːˈtiːnθ/</td>
+                    <td class="unit">M4U2</td>
+                    <td class="meaning">第十四</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">fruit</span><button class="speak-btn" onclick="speak('fruit')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/fruːt/</td>
+                    <td class="unit">M1U3</td>
+                    <td class="meaning">水果</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">fun</span><button class="speak-btn" onclick="speak('fun')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/fʌn/</td>
+                    <td class="unit">M2U2</td>
+                    <td class="meaning">乐趣</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">funny</span><button class="speak-btn" onclick="speak('funny')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/ˈfʌni/</td>
+                    <td class="unit">M4U1</td>
+                    <td class="meaning">有趣的，滑稽的</td>
+                </tr>
+                <tr class="letter-header">
+                    <td colspan="5">G</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">glass</span><button class="speak-btn" onclick="speak('glass')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ɡlɑːs/</td>
+                    <td class="unit">M1U2</td>
+                    <td class="meaning">玻璃杯</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">glove</span><button class="speak-btn" onclick="speak('glove')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ɡlʌv/</td>
+                    <td class="unit">M2U3</td>
+                    <td class="meaning">手套</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">go away</span><button class="speak-btn" onclick="speak('go')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">/ɡəʊ əˈweɪ/</td>
+                    <td class="unit">M4U3</td>
+                    <td class="meaning">离开</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">go fishing</span><button class="speak-btn" onclick="speak('go')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">/ɡəʊ ˈfɪʃɪŋ/</td>
+                    <td class="unit">M4U3</td>
+                    <td class="meaning">去钓鱼</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">grass</span><button class="speak-btn" onclick="speak('grass')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ɡrɑːs/</td>
+                    <td class="unit">M3U2</td>
+                    <td class="meaning">草</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">grasshopper</span><button class="speak-btn" onclick="speak('grasshopper')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈɡrɑːshɒpə(r)/</td>
+                    <td class="unit">M3U2</td>
+                    <td class="meaning">蚱蜢</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">great</span><button class="speak-btn" onclick="speak('great')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/ɡreɪt/</td>
+                    <td class="unit">M2U3</td>
+                    <td class="meaning">好极的</td>
+                </tr>
+                <tr class="letter-header">
+                    <td colspan="5">H</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">hard</span><button class="speak-btn" onclick="speak('hard')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/hɑːd/</td>
+                    <td class="unit">M1U2</td>
+                    <td class="meaning">硬的</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">has</span><button class="speak-btn" onclick="speak('has')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/hæz/</td>
+                    <td class="unit">M2U1</td>
+                    <td class="meaning">有，拥有（第三人称单数）</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">hat</span><button class="speak-btn" onclick="speak('hat')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/hæt/</td>
+                    <td class="unit">M2U1</td>
+                    <td class="meaning">帽子</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">head</span><button class="speak-btn" onclick="speak('head')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/hed/</td>
+                    <td class="unit">M4U1</td>
+                    <td class="meaning">头</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">hear</span><button class="speak-btn" onclick="speak('hear')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/hɪə(r)/</td>
+                    <td class="unit">M1U1</td>
+                    <td class="meaning">听见</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">help</span><button class="speak-btn" onclick="speak('help')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/help/</td>
+                    <td class="unit">M1U3</td>
+                    <td class="meaning">帮助</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">here</span><button class="speak-btn" onclick="speak('here')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">adv.</td>
+                    <td class="phonetic">/hɪə(r)/</td>
+                    <td class="unit">M2U1</td>
+                    <td class="meaning">这里，在这里</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">his</span><button class="speak-btn" onclick="speak('his')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">pron.</td>
+                    <td class="phonetic">/hɪz/</td>
+                    <td class="unit">M2U3</td>
+                    <td class="meaning">他的</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">home</span><button class="speak-btn" onclick="speak('home')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">adv.</td>
+                    <td class="phonetic">/həʊm/</td>
+                    <td class="unit">M3U1</td>
+                    <td class="meaning">到家，在家</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">horse</span><button class="speak-btn" onclick="speak('horse')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/hɔːs/</td>
+                    <td class="unit">M2U3</td>
+                    <td class="meaning">马</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">house</span><button class="speak-btn" onclick="speak('house')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/haʊs/</td>
+                    <td class="unit">M3U1</td>
+                    <td class="meaning">房子</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">how</span><button class="speak-btn" onclick="speak('how')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">adv.</td>
+                    <td class="phonetic">/haʊ/</td>
+                    <td class="unit">M1U2</td>
+                    <td class="meaning">怎样，如何，多么</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">hungry</span><button class="speak-btn" onclick="speak('hungry')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/ˈhʌŋɡri/</td>
+                    <td class="unit">M1U2</td>
+                    <td class="meaning">饿的</td>
+                </tr>
+                <tr class="letter-header">
+                    <td colspan="5">I</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">ice-skate</span><button class="speak-btn" onclick="speak('ice-skate')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/ˈaɪs skeɪt/</td>
+                    <td class="unit">M3U3</td>
+                    <td class="meaning">滑冰</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">into</span><button class="speak-btn" onclick="speak('into')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">prep.</td>
+                    <td class="phonetic">/ˈɪntuː/</td>
+                    <td class="unit">M2U1</td>
+                    <td class="meaning">到……里面</td>
+                </tr>
+                <tr class="letter-header">
+                    <td colspan="5">J</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">jacket</span><button class="speak-btn" onclick="speak('jacket')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈdʒækɪt/</td>
+                    <td class="unit">M2U3</td>
+                    <td class="meaning">夹克衫</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">January</span><button class="speak-btn" onclick="speak('January')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈdʒænjuəri/</td>
+                    <td class="unit">M4U2</td>
+                    <td class="meaning">一月</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">Japan</span><button class="speak-btn" onclick="speak('Japan')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">/dʒəˈpæn/</td>
+                    <td class="unit">M4U2</td>
+                    <td class="meaning">日本</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">July</span><button class="speak-btn" onclick="speak('July')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/dʒuˈlaɪ/</td>
+                    <td class="unit">M4U2</td>
+                    <td class="meaning">七月</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">jump</span><button class="speak-btn" onclick="speak('jump')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/dʒʌmp/</td>
+                    <td class="unit">M2U1</td>
+                    <td class="meaning">跳</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">June</span><button class="speak-btn" onclick="speak('June')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/dʒuːn/</td>
+                    <td class="unit">M4U2</td>
+                    <td class="meaning">六月</td>
+                </tr>
+                <tr class="letter-header">
+                    <td colspan="5">K</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">knee</span><button class="speak-btn" onclick="speak('knee')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/niː/</td>
+                    <td class="unit">M4U1</td>
+                    <td class="meaning">膝盖</td>
+                </tr>
+                <tr class="letter-header">
+                    <td colspan="5">L</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">leg</span><button class="speak-btn" onclick="speak('leg')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/leɡ/</td>
+                    <td class="unit">M4U1</td>
+                    <td class="meaning">腿</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">lemon</span><button class="speak-btn" onclick="speak('lemon')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈlemən/</td>
+                    <td class="unit">M1U3</td>
+                    <td class="meaning">柠檬</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">lion</span><button class="speak-btn" onclick="speak('lion')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈlaɪən/</td>
+                    <td class="unit">M2U1</td>
+                    <td class="meaning">狮子</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">listen</span><button class="speak-btn" onclick="speak('listen')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/ˈlɪsn/</td>
+                    <td class="unit">M1U1</td>
+                    <td class="meaning">听</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">lovely</span><button class="speak-btn" onclick="speak('lovely')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/ˈlʌvli/</td>
+                    <td class="unit">M2U2</td>
+                    <td class="meaning">可爱的</td>
+                </tr>
+                <tr class="letter-header">
+                    <td colspan="5">M</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">make</span><button class="speak-btn" onclick="speak('make')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/meɪk/</td>
+                    <td class="unit">M2U3</td>
+                    <td class="meaning">做</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">March</span><button class="speak-btn" onclick="speak('March')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/mɑːtʃ/</td>
+                    <td class="unit">M4U2</td>
+                    <td class="meaning">三月</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">May</span><button class="speak-btn" onclick="speak('May')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/meɪ/</td>
+                    <td class="unit">M4U2</td>
+                    <td class="meaning">五月</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">monkey</span><button class="speak-btn" onclick="speak('monkey')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈmʌŋki/</td>
+                    <td class="unit">M2U1</td>
+                    <td class="meaning">猴子</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">the Moon</span><button class="speak-btn" onclick="speak('the')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ðə muːn/</td>
+                    <td class="unit">M1U2</td>
+                    <td class="meaning">月球，月亮</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">mountain</span><button class="speak-btn" onclick="speak('mountain')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈmaʊntən/</td>
+                    <td class="unit">M3U2</td>
+                    <td class="meaning">山</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">myself</span><button class="speak-btn" onclick="speak('myself')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">pron.</td>
+                    <td class="phonetic">/maɪˈself/</td>
+                    <td class="unit">M4U1</td>
+                    <td class="meaning">我自己</td>
+                </tr>
+                <tr class="letter-header">
+                    <td colspan="5">O</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">October</span><button class="speak-btn" onclick="speak('October')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ɒkˈtəʊbə(r)/</td>
+                    <td class="unit">M4U2</td>
+                    <td class="meaning">十月</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">on</span><button class="speak-btn" onclick="speak('on')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">prep.</td>
+                    <td class="phonetic">/ɒn/</td>
+                    <td class="unit">M1U2</td>
+                    <td class="meaning">在……上</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">outside</span><button class="speak-btn" onclick="speak('outside')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">adv.</td>
+                    <td class="phonetic">/ˌaʊtˈsaɪd/</td>
+                    <td class="unit">M3U2</td>
+                    <td class="meaning">在外面</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">over there</span><button class="speak-btn" onclick="speak('over')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">/ˈəʊvə(r) ðeə(r)/</td>
+                    <td class="unit">M4U3</td>
+                    <td class="meaning">在那里</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">own</span><button class="speak-btn" onclick="speak('own')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/əʊn/</td>
+                    <td class="unit">M4U3</td>
+                    <td class="meaning">自己的</td>
+                </tr>
+                <tr class="letter-header">
+                    <td colspan="5">P</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">pair</span><button class="speak-btn" onclick="speak('pair')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/peə(r)/</td>
+                    <td class="unit">M2U3</td>
+                    <td class="meaning">一双，一对</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">a pair of</span><button class="speak-btn" onclick="speak('a')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">/ə peə(r) ɒv/</td>
+                    <td class="unit">M2U3</td>
+                    <td class="meaning">一双，一对</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">panda</span><button class="speak-btn" onclick="speak('panda')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈpændə/</td>
+                    <td class="unit">M2U1</td>
+                    <td class="meaning">熊猫</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">parent</span><button class="speak-btn" onclick="speak('parent')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈpeərənt/</td>
+                    <td class="unit">M4U2</td>
+                    <td class="meaning">父亲（或母亲）</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">park</span><button class="speak-btn" onclick="speak('park')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/pɑːk/</td>
+                    <td class="unit">M3U3</td>
+                    <td class="meaning">公园</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">photograph</span><button class="speak-btn" onclick="speak('photograph')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈfəʊtəɡrɑːf/</td>
+                    <td class="unit">M4U2</td>
+                    <td class="meaning">照片</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">picnic</span><button class="speak-btn" onclick="speak('picnic')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈpɪknɪk/</td>
+                    <td class="unit">M3U3</td>
+                    <td class="meaning">野餐</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">pie</span><button class="speak-btn" onclick="speak('pie')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/paɪ/</td>
+                    <td class="unit">M1U2</td>
+                    <td class="meaning">果馅饼</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">pineapple</span><button class="speak-btn" onclick="speak('pineapple')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈpaɪnæpl/</td>
+                    <td class="unit">M1U2</td>
+                    <td class="meaning">菠萝</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">plant</span><button class="speak-btn" onclick="speak('plant')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/plɑːnt/</td>
+                    <td class="unit">M3U3</td>
+                    <td class="meaning">种植</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">play</span><button class="speak-btn" onclick="speak('play')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/pleɪ/</td>
+                    <td class="unit">M2U2</td>
+                    <td class="meaning">玩</td>
+                </tr>
+                <tr class="letter-header">
+                    <td colspan="5">R</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">rectangle</span><button class="speak-btn" onclick="speak('rectangle')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈrektæŋɡl/</td>
+                    <td class="unit">M3U1</td>
+                    <td class="meaning">长方形，矩形</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">river</span><button class="speak-btn" onclick="speak('river')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈrɪvə(r)/</td>
+                    <td class="unit">M3U2</td>
+                    <td class="meaning">河流</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">robot</span><button class="speak-btn" onclick="speak('robot')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈrəʊbɒt/</td>
+                    <td class="unit">M2U2</td>
+                    <td class="meaning">机器人</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">rock</span><button class="speak-btn" onclick="speak('rock')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/rɒk/</td>
+                    <td class="unit">M2U1</td>
+                    <td class="meaning">岩石</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">rough</span><button class="speak-btn" onclick="speak('rough')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/rʌf/</td>
+                    <td class="unit">M1U2</td>
+                    <td class="meaning">粗糙的</td>
+                </tr>
+                <tr class="letter-header">
+                    <td colspan="5">S</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">salt</span><button class="speak-btn" onclick="speak('salt')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/sɔːlt/</td>
+                    <td class="unit">M1U3</td>
+                    <td class="meaning">盐</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">salty</span><button class="speak-btn" onclick="speak('salty')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/ˈsɔːlti/</td>
+                    <td class="unit">M1U3</td>
+                    <td class="meaning">咸的</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">sandcastle</span><button class="speak-btn" onclick="speak('sandcastle')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈsændkɑːsl/</td>
+                    <td class="unit">M3U3</td>
+                    <td class="meaning">沙堡</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">Saturday</span><button class="speak-btn" onclick="speak('Saturday')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈsætədeɪ/</td>
+                    <td class="unit">M4U2</td>
+                    <td class="meaning">星期六</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">scarf</span><button class="speak-btn" onclick="speak('scarf')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/skɑːf/</td>
+                    <td class="unit">M2U3</td>
+                    <td class="meaning">围巾</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">sea</span><button class="speak-btn" onclick="speak('sea')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/siː/</td>
+                    <td class="unit">M3U2</td>
+                    <td class="meaning">海</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">season</span><button class="speak-btn" onclick="speak('season')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈsiːzn/</td>
+                    <td class="unit">M3U3</td>
+                    <td class="meaning">季节</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">second</span><button class="speak-btn" onclick="speak('second')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">num.</td>
+                    <td class="phonetic">/ˈsekənd/</td>
+                    <td class="unit">M4U2</td>
+                    <td class="meaning">第二</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">shape</span><button class="speak-btn" onclick="speak('shape')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ʃeɪp/</td>
+                    <td class="unit">M3U1</td>
+                    <td class="meaning">形状</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">ship</span><button class="speak-btn" onclick="speak('ship')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ʃɪp/</td>
+                    <td class="unit">M1U1</td>
+                    <td class="meaning">（大）船，舰</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">shoulder</span><button class="speak-btn" onclick="speak('shoulder')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈʃəʊldə(r)/</td>
+                    <td class="unit">M4U1</td>
+                    <td class="meaning">肩膀</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">Singapore</span><button class="speak-btn" onclick="speak('Singapore')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">/ˌsɪŋɡəˈpɔː(r)/</td>
+                    <td class="unit">M4U2</td>
+                    <td class="meaning">新加坡</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">skateboard</span><button class="speak-btn" onclick="speak('skateboard')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈskeɪtbɔːd/</td>
+                    <td class="unit">M2U2</td>
+                    <td class="meaning">滑板</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">ski</span><button class="speak-btn" onclick="speak('ski')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/skiː/</td>
+                    <td class="unit">M3U3</td>
+                    <td class="meaning">滑雪</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">sky</span><button class="speak-btn" onclick="speak('sky')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/skaɪ/</td>
+                    <td class="unit">M3U2</td>
+                    <td class="meaning">天空</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">sleep</span><button class="speak-btn" onclick="speak('sleep')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/sliːp/</td>
+                    <td class="unit">M3U2</td>
+                    <td class="meaning">睡觉</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">slowly</span><button class="speak-btn" onclick="speak('slowly')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">adv.</td>
+                    <td class="phonetic">/ˈsləʊli/</td>
+                    <td class="unit">M3U3</td>
+                    <td class="meaning">缓慢地</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">smell</span><button class="speak-btn" onclick="speak('smell')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/smel/</td>
+                    <td class="unit">M1U3</td>
+                    <td class="meaning">闻，有……气味</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">smooth</span><button class="speak-btn" onclick="speak('smooth')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/smuːð/</td>
+                    <td class="unit">M1U2</td>
+                    <td class="meaning">平滑的</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">snow</span><button class="speak-btn" onclick="speak('snow')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/snəʊ/</td>
+                    <td class="unit">M3U2</td>
+                    <td class="meaning">雪</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">so</span><button class="speak-btn" onclick="speak('so')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">adv.</td>
+                    <td class="phonetic">/səʊ/</td>
+                    <td class="unit">M2U1</td>
+                    <td class="meaning">那么；如此</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">sock</span><button class="speak-btn" onclick="speak('sock')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/sɒk/</td>
+                    <td class="unit">M2U3</td>
+                    <td class="meaning">短袜</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">soft</span><button class="speak-btn" onclick="speak('soft')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/sɒft/</td>
+                    <td class="unit">M1U2</td>
+                    <td class="meaning">柔软的</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">song</span><button class="speak-btn" onclick="speak('song')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/sɒŋ/</td>
+                    <td class="unit">M4U2</td>
+                    <td class="meaning">歌曲</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">sour</span><button class="speak-btn" onclick="speak('sour')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/ˈsaʊə(r)/</td>
+                    <td class="unit">M1U3</td>
+                    <td class="meaning">酸的</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">spring</span><button class="speak-btn" onclick="speak('spring')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/sprɪŋ/</td>
+                    <td class="unit">M3U2</td>
+                    <td class="meaning">春天</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">square</span><button class="speak-btn" onclick="speak('square')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/skweə(r)/</td>
+                    <td class="unit">M3U1</td>
+                    <td class="meaning">正方形</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">star</span><button class="speak-btn" onclick="speak('star')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/stɑː(r)/</td>
+                    <td class="unit">M3U1</td>
+                    <td class="meaning">（五角）星形</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">stop</span><button class="speak-btn" onclick="speak('stop')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/stɒp/</td>
+                    <td class="unit">M4U3</td>
+                    <td class="meaning">停止</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">story</span><button class="speak-btn" onclick="speak('story')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈstɔːri/</td>
+                    <td class="unit">M4U3</td>
+                    <td class="meaning">故事</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">strong</span><button class="speak-btn" onclick="speak('strong')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">adj.</td>
+                    <td class="phonetic">/strɒŋ/</td>
+                    <td class="unit">M2U1</td>
+                    <td class="meaning">强壮的</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">summer</span><button class="speak-btn" onclick="speak('summer')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈsʌmə(r)/</td>
+                    <td class="unit">M2U1</td>
+                    <td class="meaning">夏天</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">super</span><button class="speak-btn" onclick="speak('super')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈsuːpə(r)/</td>
+                    <td class="unit">M2U2</td>
+                    <td class="meaning">超级的</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">sweet</span><button class="speak-btn" onclick="speak('sweet')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/swiːt/</td>
+                    <td class="unit">M1U3</td>
+                    <td class="meaning">糖果</td>
+                </tr>
+                <tr class="letter-header">
+                    <td colspan="5">T</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">take</span><button class="speak-btn" onclick="speak('take')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/teɪk/</td>
+                    <td class="unit">M2U1</td>
+                    <td class="meaning">拿；获得</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">take a photograph</span><button class="speak-btn" onclick="speak('take')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">/teɪk ə ˈfəʊtəɡrɑːf/</td>
+                    <td class="unit">M4U2</td>
+                    <td class="meaning">拍照</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">take a rest</span><button class="speak-btn" onclick="speak('take')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">/teɪk ə rest/</td>
+                    <td class="unit">M2U1</td>
+                    <td class="meaning">休息</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">take off</span><button class="speak-btn" onclick="speak('take')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">/teɪk ɒf/</td>
+                    <td class="unit">M3U1</td>
+                    <td class="meaning">脱下（衣服）</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">taste</span><button class="speak-btn" onclick="speak('taste')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/teɪst/</td>
+                    <td class="unit">M1U3</td>
+                    <td class="meaning">尝；有……味道</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">Thailand</span><button class="speak-btn" onclick="speak('Thailand')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">/ˈtaɪlænd/</td>
+                    <td class="unit">M4U2</td>
+                    <td class="meaning">泰国</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">them</span><button class="speak-btn" onclick="speak('them')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">pron.</td>
+                    <td class="phonetic">/ðem/</td>
+                    <td class="unit">M1U1</td>
+                    <td class="meaning">他们，它们</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">these</span><button class="speak-btn" onclick="speak('these')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">pron.</td>
+                    <td class="phonetic">/ðiːz/</td>
+                    <td class="unit">M2U3</td>
+                    <td class="meaning">这些</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">third</span><button class="speak-btn" onclick="speak('third')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">num.</td>
+                    <td class="phonetic">/θɜːd/</td>
+                    <td class="unit">M4U2</td>
+                    <td class="meaning">第三</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">those</span><button class="speak-btn" onclick="speak('those')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">pron.</td>
+                    <td class="phonetic">/ðəʊz/</td>
+                    <td class="unit">M2U3</td>
+                    <td class="meaning">那些</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">tiger</span><button class="speak-btn" onclick="speak('tiger')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈtaɪɡə(r)/</td>
+                    <td class="unit">M2U1</td>
+                    <td class="meaning">老虎</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">time</span><button class="speak-btn" onclick="speak('time')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/taɪm/</td>
+                    <td class="unit">M4U3</td>
+                    <td class="meaning">时间</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">together</span><button class="speak-btn" onclick="speak('together')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">adv.</td>
+                    <td class="phonetic">/təˈɡeðə(r)/</td>
+                    <td class="unit">M2U2</td>
+                    <td class="meaning">一起</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">touch</span><button class="speak-btn" onclick="speak('touch')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/tʌtʃ/</td>
+                    <td class="unit">M1U2</td>
+                    <td class="meaning">触摸；碰</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">train</span><button class="speak-btn" onclick="speak('train')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/treɪn/</td>
+                    <td class="unit">M2U2</td>
+                    <td class="meaning">火车</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">tree</span><button class="speak-btn" onclick="speak('tree')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/triː/</td>
+                    <td class="unit">M2U1</td>
+                    <td class="meaning">树</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">triangle</span><button class="speak-btn" onclick="speak('triangle')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈtraɪæŋɡl/</td>
+                    <td class="unit">M3U1</td>
+                    <td class="meaning">三角形</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">trousers</span><button class="speak-btn" onclick="speak('trousers')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈtraʊzəz/</td>
+                    <td class="unit">M2U3</td>
+                    <td class="meaning">裤子</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">turn off</span><button class="speak-btn" onclick="speak('turn')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">/tɜːn ɒf/</td>
+                    <td class="unit">M3U1</td>
+                    <td class="meaning">关掉（开关等）</td>
+                </tr>
+                <tr class="letter-header">
+                    <td colspan="5">U</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">the UK</span><button class="speak-btn" onclick="speak('the')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">-</td>
+                    <td class="phonetic">/ðə ˌjuː ˈkeɪ/</td>
+                    <td class="unit">M4U2</td>
+                    <td class="meaning">英国</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">uncle</span><button class="speak-btn" onclick="speak('uncle')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈʌŋkl/</td>
+                    <td class="unit">M2U1</td>
+                    <td class="meaning">叔；舅</td>
+                </tr>
+                <tr class="letter-header">
+                    <td colspan="5">W</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">walk</span><button class="speak-btn" onclick="speak('walk')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">v.</td>
+                    <td class="phonetic">/wɔːk/</td>
+                    <td class="unit">M2U2</td>
+                    <td class="meaning">行走</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">wall</span><button class="speak-btn" onclick="speak('wall')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/wɔːl/</td>
+                    <td class="unit">M2U2</td>
+                    <td class="meaning">墙</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">water</span><button class="speak-btn" onclick="speak('water')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈwɔːtə(r)/</td>
+                    <td class="unit">M4U3</td>
+                    <td class="meaning">水</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">whale</span><button class="speak-btn" onclick="speak('whale')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/weɪl/</td>
+                    <td class="unit">M1U3</td>
+                    <td class="meaning">鲸鱼</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">window</span><button class="speak-btn" onclick="speak('window')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈwɪndəʊ/</td>
+                    <td class="unit">M1U1</td>
+                    <td class="meaning">窗，窗户</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">winter</span><button class="speak-btn" onclick="speak('winter')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈwɪntə(r)/</td>
+                    <td class="unit">M3U2</td>
+                    <td class="meaning">冬天</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">with</span><button class="speak-btn" onclick="speak('with')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">prep.</td>
+                    <td class="phonetic">/wɪð/</td>
+                    <td class="unit">M4U2</td>
+                    <td class="meaning">和……一起</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">wolf</span><button class="speak-btn" onclick="speak('wolf')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/wʊlf/</td>
+                    <td class="unit">M4U3</td>
+                    <td class="meaning">狼</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">word</span><button class="speak-btn" onclick="speak('word')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/wɜːd/</td>
+                    <td class="unit">M2U3</td>
+                    <td class="meaning">单词</td>
+                </tr>
+                <tr class="letter-header">
+                    <td colspan="5">Y</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">yourself</span><button class="speak-btn" onclick="speak('yourself')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">pron.</td>
+                    <td class="phonetic">/jɔːˈself/</td>
+                    <td class="unit">M4U1</td>
+                    <td class="meaning">你自己</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">yuan</span><button class="speak-btn" onclick="speak('yuan')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/juˈæn/</td>
+                    <td class="unit">M1U2</td>
+                    <td class="meaning">（人民币）元</td>
+                </tr>
+                <tr class="letter-header">
+                    <td colspan="5">Z</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">zebra</span><button class="speak-btn" onclick="speak('zebra')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/ˈzebrə/</td>
+                    <td class="unit">M2U3</td>
+                    <td class="meaning">斑马</td>
+                </tr>
+                <tr>
+                    <td class="word-cell"><span class="word">zoo</span><button class="speak-btn" onclick="speak('zoo')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                    <td class="pos">n.</td>
+                    <td class="phonetic">/zuː/</td>
+                    <td class="unit">M4U2</td>
+                    <td class="meaning">动物园</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="daily-section">
+            <h2 class="daily-title">🌟 Daily Expressions (日常用语)</h2>
+            <table class="daily-table">
+                <thead>
+                    <tr>
+                        <th style="width:40%">英语 Expression</th>
+                        <th style="width:10%">单元</th>
+                        <th style="width:50%">中文意思 Meaning</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="word-cell"><span class="word">How much?</span><button class="speak-btn" onclick="speak('How much')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                        <td class="unit">M1U2</td>
+                        <td class="meaning">多少钱？</td>
+                    </tr>
+                    <tr>
+                        <td class="word-cell"><span class="word">Me too.</span><button class="speak-btn" onclick="speak('Me too')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                        <td class="unit">M1U2</td>
+                        <td class="meaning">我也是。</td>
+                    </tr>
+                    <tr>
+                        <td class="word-cell"><span class="word">I'm sorry.</span><button class="speak-btn" onclick="speak('I'm sorry')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                        <td class="unit">M2U2</td>
+                        <td class="meaning">对不起。</td>
+                    </tr>
+                    <tr>
+                        <td class="word-cell"><span class="word">Are you OK?</span><button class="speak-btn" onclick="speak('Are you OK')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                        <td class="unit">M2U2</td>
+                        <td class="meaning">你还好吗？</td>
+                    </tr>
+                    <tr>
+                        <td class="word-cell"><span class="word">That's all right.</span><button class="speak-btn" onclick="speak('That's all right')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                        <td class="unit">M2U2</td>
+                        <td class="meaning">没关系。</td>
+                    </tr>
+                    <tr>
+                        <td class="word-cell"><span class="word">I see.</span><button class="speak-btn" onclick="speak('I see')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                        <td class="unit">M2U3</td>
+                        <td class="meaning">我明白了。</td>
+                    </tr>
+                    <tr>
+                        <td class="word-cell"><span class="word">May I have a try?</span><button class="speak-btn" onclick="speak('May I have a try')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                        <td class="unit">M2U3</td>
+                        <td class="meaning">我可以试试吗？</td>
+                    </tr>
+                    <tr>
+                        <td class="word-cell"><span class="word">How are you today?</span><button class="speak-btn" onclick="speak('How are you today')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                        <td class="unit">M3U1</td>
+                        <td class="meaning">你今天好吗？</td>
+                    </tr>
+                    <tr>
+                        <td class="word-cell"><span class="word">Very well.</span><button class="speak-btn" onclick="speak('Very well')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                        <td class="unit">M3U1</td>
+                        <td class="meaning">很好。</td>
+                    </tr>
+                    <tr>
+                        <td class="word-cell"><span class="word">Of course.</span><button class="speak-btn" onclick="speak('Of course')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                        <td class="unit">M4U1</td>
+                        <td class="meaning">当然。</td>
+                    </tr>
+                    <tr>
+                        <td class="word-cell"><span class="word">Happy Children's Day!</span><button class="speak-btn" onclick="speak('Happy Children's Day')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                        <td class="unit">M4U2</td>
+                        <td class="meaning">儿童节快乐！</td>
+                    </tr>
+                    <tr>
+                        <td class="word-cell"><span class="word">Great!</span><button class="speak-btn" onclick="speak('Great')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                        <td class="unit">M4U2</td>
+                        <td class="meaning">太棒了！</td>
+                    </tr>
+                    <tr>
+                        <td class="word-cell"><span class="word">Hooray!</span><button class="speak-btn" onclick="speak('Hooray')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                        <td class="unit">M4U3</td>
+                        <td class="meaning">好哇！</td>
+                    </tr>
+                    <tr>
+                        <td class="word-cell"><span class="word">Help!</span><button class="speak-btn" onclick="speak('Help')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                        <td class="unit">M4U3</td>
+                        <td class="meaning">救命！</td>
+                    </tr>
+                    <tr>
+                        <td class="word-cell"><span class="word">Stop!</span><button class="speak-btn" onclick="speak('Stop')" title="点击发音"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button></td>
+                        <td class="unit">M4U3</td>
+                        <td class="meaning">站住！</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="reference-section">
+            <h2>📖 原始资料引用 (Source References)</h2>
+            <p class="reference-intro">以下图片为沪教版三年级英语下册（牛津上海版）电子课本单词表原始截图，仅供学习参考使用。</p>
+            <div class="image-gallery">
+                <div class="image-item"><img src="images3x/page1.jpg" alt="单词表第1页 A-G"><div class="image-caption"><strong>第1页</strong> - 单词 A-G</div></div>
+                <div class="image-item"><img src="images3x/page2.jpg" alt="单词表第2页 G-P"><div class="image-caption"><strong>第2页</strong> - 单词 G-P</div></div>
+                <div class="image-item"><img src="images3x/page3.jpg" alt="单词表第3页 R-U"><div class="image-caption"><strong>第3页</strong> - 单词 R-U</div></div>
+                <div class="image-item"><img src="images3x/page4.jpg" alt="单词表第4页 W-Z"><div class="image-caption"><strong>第4页</strong> - 单词 W-Z</div></div>
+            </div>
+            <p class="copyright-notice">📌 来源: <a href="https://xueba5.com" target="_blank">xueba5.com</a> - 沪教版三年级英语下册单词表<br>本页面仅供个人学习使用，版权归原作者所有。</p>
+        </div>
+    </div>
+    <script>
+        function speak(word) {
+            const cleanWord = word.replace(/[^a-zA-Z\s'-]/g, '').trim();
+            if (!cleanWord) return;
+            const utterance = new SpeechSynthesisUtterance(cleanWord);
+            utterance.lang = 'en-US';
+            utterance.rate = 0.9;
+            speechSynthesis.speak(utterance);
+        }
+    </script>
+</body>
+</html>
