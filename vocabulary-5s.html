@@ -325,7 +325,7 @@
                     <th style="width:35%">中文意思 Meaning</th>
                 </tr>
             </thead>
-                        <tbody>
+            <tbody>
                 <!-- A -->
                 <tr class="letter-header">
                     <td colspan="4">A</td>
@@ -1421,7 +1421,7 @@
 
         </table>
 
-                <!-- Daily Expressions Section -->
+        <!-- Daily Expressions Section -->
         <div class="daily-expressions-section">
             <h2>📢 Daily Expressions (日常用语)</h2>
             <div class="expr-grid">
@@ -1528,60 +1528,60 @@
             </div>
         </div>
 
-        </div>
+    </div>
 
-        <table class="word-table" style="display:none;">
-            </tbody>
-        </table>
+    <table class="word-table" style="display:none;">
+        </tbody>
+    </table>
 
-        <!-- 引用来源 Reference Section -->
-        <div class="reference-section">
-            <h2>📖 原始资料引用 (Source References)</h2>
-            <p class="reference-intro">以下图片为沪教版五年级英语上册（牛津上海版）电子课本单词表原始截图，仅供学习参考使用。</p>
+    <!-- 引用来源 Reference Section -->
+    <div class="reference-section">
+        <h2>📖 原始资料引用 (Source References)</h2>
+        <p class="reference-intro">以下图片为沪教版五年级英语上册（牛津上海版）电子课本单词表原始截图，仅供学习参考使用。</p>
 
-            <div class="image-gallery">
-                <div class="image-item">
-                    <img src="images5s/page1.png" alt="单词表第1页">
-                    <div class="image-caption">
-                        <strong>第1页</strong> - 单词 A-F
-                    </div>
-                </div>
-
-                <div class="image-item">
-                    <img src="images5s/page2.png" alt="单词表第2页">
-                    <div class="image-caption">
-                        <strong>第2页</strong> - 单词 G-M
-                    </div>
-                </div>
-
-                <div class="image-item">
-                    <img src="images5s/page3.png" alt="单词表第3页">
-                    <div class="image-caption">
-                        <strong>第3页</strong> - 单词 N-S
-                    </div>
-                </div>
-
-                <div class="image-item">
-                    <img src="images5s/page4.png" alt="单词表第4页">
-                    <div class="image-caption">
-                        <strong>第4页</strong> - 单词 T-Z
-                    </div>
-                </div>
-
-                <div class="image-item">
-                    <img src="images5s/page5.png" alt="日常用语">
-                    <div class="image-caption">
-                        <strong>第5页</strong> - Daily Expressions 日常用语
-                    </div>
+        <div class="image-gallery">
+            <div class="image-item">
+                <img src="images5s/page1.png" alt="单词表第1页">
+                <div class="image-caption">
+                    <strong>第1页</strong> - 单词 A-F
                 </div>
             </div>
 
-            <p class="copyright-notice">
-                📚 来源：<a href="https://xueba5.com/hujiaoban/yingyux5s_54sh/133702.html" target="_blank">xueba5.com -
-                    沪教版五年级英语上册单词表</a><br>
-                本页面仅供个人学习使用，版权归原作者所有。
-            </p>
+            <div class="image-item">
+                <img src="images5s/page2.png" alt="单词表第2页">
+                <div class="image-caption">
+                    <strong>第2页</strong> - 单词 G-M
+                </div>
+            </div>
+
+            <div class="image-item">
+                <img src="images5s/page3.png" alt="单词表第3页">
+                <div class="image-caption">
+                    <strong>第3页</strong> - 单词 N-S
+                </div>
+            </div>
+
+            <div class="image-item">
+                <img src="images5s/page4.png" alt="单词表第4页">
+                <div class="image-caption">
+                    <strong>第4页</strong> - 单词 T-Z
+                </div>
+            </div>
+
+            <div class="image-item">
+                <img src="images5s/page5.png" alt="日常用语">
+                <div class="image-caption">
+                    <strong>第5页</strong> - Daily Expressions 日常用语
+                </div>
+            </div>
         </div>
+
+        <p class="copyright-notice">
+            📚 来源：<a href="https://xueba5.com/hujiaoban/yingyux5s_54sh/133702.html" target="_blank">xueba5.com -
+                沪教版五年级英语上册单词表</a><br>
+            本页面仅供个人学习使用，版权归原作者所有。
+        </p>
+    </div>
     </div>
 
     <script>
@@ -1651,6 +1651,17 @@
             document.querySelectorAll('.word-table tbody tr:not(.letter-header) td.word').forEach(td => {
                 const word = td.textContent.trim();
                 if (word && word !== '-') {
+                    // Create new structure: td.word-cell > span.word + button
+                    td.classList.add('word-cell');
+                    td.classList.remove('word');
+
+                    td.innerHTML = '';
+
+                    const span = document.createElement('span');
+                    span.className = 'word';
+                    span.textContent = word;
+                    td.appendChild(span);
+
                     const btn = createSpeakButton(word);
                     td.appendChild(btn);
                 }
