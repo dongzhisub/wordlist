@@ -25,9 +25,22 @@ mkdir -p images4s  # 创建对应年级的目录 (如 images4s 代表 4年级上
 
 curl 'https://image-url.jpg' \
   -H 'Referer: https://source-page-url.html' \
-  -H 'User-Agent: Mozilla/5.0 ... Chrome/120.0 ...' \
+  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \
+  -H 'Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8' \
+  -H 'Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Pragma: no-cache' \
+  -H 'Sec-Fetch-Dest: image' \
+  -H 'Sec-Fetch-Mode: no-cors' \
+  -H 'Sec-Fetch-Site: same-origin' \
+  -H 'sec-ch-ua: "Chromium";v="143", "Not A(Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Linux"' \
+  -b 'say=ok11; Hm_lvt_...=...; HMACCOUNT=...; Hm_lpvt_...=...' \
   -o images4s/page1.jpg
 ```
+*Note: You may need to copy the full `curl` command (including headers and cookies) from your browser's "Copy as curl" feature in the Network tab to bypass strict anti-bot protection.*
 *对每一页重复此步骤，确保下载后的文件大小正常（通常 90KB+），而非几百字节的错误文件。*
 
 ## 3. 提取词汇数据 (Data Extraction)
